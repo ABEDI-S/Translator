@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Translator</string>
+    <string name="translator">Translator</string>
+    <string name="todo">TODO</string>
 </resources>

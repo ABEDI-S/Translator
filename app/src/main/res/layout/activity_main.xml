@@ -14,7 +14,8 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        app:srcCompat="@drawable/magnifier_logo"/>
+        app:srcCompat="@drawable/magnifier_logo"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/txtname"
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:fontFamily="cursive"
-        android:text="Translator"
+        android:text="@string/translator"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="40sp" />
