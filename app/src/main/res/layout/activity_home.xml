@@ -1,9 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#112238"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-265dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="-70dp"
+            android:layout_marginLeft="270dp"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="110dp"
+            android:text=". Welcome to World of Words ."
+            android:textColor="#112238"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/language"
+        android:textColor="#8D8F91"
+        android:textSize="18sp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp">
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/idFromSpinner"
+            android:layout_margin="3dp"
+            android:padding="3dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_repeat_24"
+            android:contentDescription="@string/todo" />
+
+        <Spinner
+            android:id="@+id/idTopSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/tap_to_enter_text"
+        android:padding="5dp"
+        android:textColorHint="#8D8F91"
+        app:hintTextColor="#FFF"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/idEdtSource"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textImeMultiLine|textMultiLine"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/round_button"
+        android:text="Translate"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textSize="19sp"/>
+
+</LinearLayout>

@@ -2,4 +2,8 @@
     <string name="app_name">Translator</string>
     <string name="translator">Translator</string>
     <string name="todo">TODO</string>
+    <string name="language">Language</string>
+    <string name="tap_to_enter_text">Tap To Enter Text</string>
+
+
 </resources>
