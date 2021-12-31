@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="270dp"
-        android:text="Soraya Abedi"
+        android:text="@string/soraya_abedi"
         android:textAlignment="center"
         android:textColor="#AEAEAE"
         android:textSize="14sp" />
