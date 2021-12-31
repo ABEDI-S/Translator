@@ -95,7 +95,7 @@ public class HomeActivity extends AppCompatActivity {
                     Toast.makeText(HomeActivity.this,"Please Select Source Language.",Toast.LENGTH_SHORT).show();
                 }
                 else if(toLanguageCode == 0){
-                    Toast.makeText(HomeActivity.this,"Please Select The Language To Make Translation.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HomeActivity.this,"Please Select The Language To Translate.",Toast.LENGTH_SHORT).show();
                 }
                 else {
                     translateText(fromLanguageCode,toLanguageCode,sourceEdt.getText().toString());
@@ -116,7 +116,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void translateText(int fromLanguageCode,int toLanguageCode,String source){
-            translatedTV.setText("Downloading Modal ...");
+            translatedTV.setText("Translating ...");
         FirebaseTranslatorOptions options = new FirebaseTranslatorOptions.Builder()
                 .setSourceLanguage(fromLanguageCode)
                 .setTargetLanguage(toLanguageCode)
