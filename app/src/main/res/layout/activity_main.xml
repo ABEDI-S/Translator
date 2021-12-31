@@ -18,10 +18,19 @@
         android:contentDescription="@string/todo" />
 
     <TextView
+        android:id="@+id/txtDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:text="Soraya Abedi"
+        android:textAlignment="center"
+        android:textColor="#AEAEAE"
+        android:textSize="14sp" />
+
+    <TextView
         android:id="@+id/txtname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
         android:fontFamily="cursive"
         android:text="@string/translator"
         android:textAlignment="center"
